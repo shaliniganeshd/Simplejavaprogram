@@ -8,21 +8,20 @@ public class OddEven
      Scanner s = new Scanner(System.in);
      System.out.println("Enter N:");
      n=s.nextInt();
-     if(-10000<=n && n<=10000)
-     {
+     
         if(n%2==0 && n>0)
         {
           System.out.println(n+"- even-positive");
         }
-        if(n%2==0 && n<0)
+        else if(n%2==0 && n<0)
         {
           System.out.println(n+"- even-negative");
         }
-        if(n%2!=0 && n>0)
+        else if(n%2!=0 && n>0)
         {
           System.out.println(n+"- odd-positive");
         }
-        if(n%2!=0 && n<0)
+        else if(n%2!=0 && n<0)
         {
           System.out.println(n+"- odd-negative");
         }
@@ -30,7 +29,7 @@ public class OddEven
         {
           System.out.println("It is zero");
         }
-     }
+     
    
   
   }
